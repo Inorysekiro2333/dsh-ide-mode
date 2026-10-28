@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "title": {
+    "en": "inorysekiro2333's DSH plugins",
+    "zh": "inorysekiro2333 的 DSH 插件"
+  },
+  "description": {
+    "en": "Bundles built for the DSH desktop shell. Third-party content: each entry declares what it installs, but the package's own manifest decides what actually runs.",
+    "zh": "为 DSH 桌面端自建的组合包。第三方内容：条目只声明它装什么，真正运行什么由包自己的 manifest 决定。"
+  },
+  "metadata": {
+    "categories": {
+      "ui": {
+        "title": { "en": "Interface", "zh": "界面" }
+      },
+      "workflow": {
+        "title": { "en": "Workflow", "zh": "工作流" }
+      }
+    },
+    "labels": {
+      "experimental": {
+        "title": { "en": "Experimental", "zh": "实验性" }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "@inory/dsh-ide-mode",
+      "title": {
+        "en": "IDE Mode",
+        "zh": "IDE 模式"
+      },
+      "description": {
+        "en": "Adds an IDE mode button to the conversation header: one click turns the main panel into a three-column workspace (file tree, an editable CodeMirror 6 code area with guarded Ctrl+S saving, and the real conversation embedded through the host's own renderer), with two draggable dividers.",
+        "zh": "在会话标题栏加一个 IDE 模式按钮：一键把主面板换成三栏工作区（文件树、带冲突保护的 Ctrl+S 保存的 CodeMirror 6 代码区、经宿主渲染器嵌入的真实对话），两条分隔线都可拖拽。"
+      },
+      "icon": "icon.svg",
+      "author": "Inorysekiro2333",
+      "homepage": "https://github.com/Inorysekiro2333/dsh-ide-mode#readme",
+      "repository": {
+        "url": "https://github.com/Inorysekiro2333/dsh-ide-mode"
+      },
+      "metadata": {
+        "category": "ui",
+        "keywords": ["ide", "editor", "codemirror", "file-tree", "workspace"],
+        "labels": ["experimental"]
+      },
+      "versions": [
+        {
+          "version": "0.4.0",
+          "publishTimestamp": 1793190048,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/Inorysekiro2333/dsh-ide-mode",
+            "commit": "ddae7fd7ec96292f9a48259f57a0dc413db24323"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.3"
+          }
+        }
+      ]
+    }
+  ]
+}
