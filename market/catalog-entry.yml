@@ -1,0 +1,24 @@
+# Copy this file into the awesome-dsh-plugin repo as
+#
+#   data/plugins/Inorysekiro2333__dsh-ide-mode.yml
+#
+# and open a PR. That single file is the whole submission — the two READMEs are
+# generated from data/plugins/*.yml, so do not touch them.
+#
+# Before submitting:
+#   - add the `dsh-plugin` topic to https://github.com/Inorysekiro2333/dsh-ide-mode
+#   - the repo must be at least 1 day old (CI checks this automatically)
+#
+# No `icon:` here on purpose: the catalog only accepts a GitHub-hosted *raster*
+# image (png/jpg/jpeg/webp) and rejects SVG, which is what this repo ships. The
+# card falls back to the owner's avatar. Add an `icon:` line pointing at a
+# committed png if you want a custom tile.
+#
+# `description.en` must describe what the code actually does; it is checked
+# against the source, and the text must stay a plain sentence (no marketing).
+url: https://github.com/Inorysekiro2333/dsh-ide-mode
+name: Inorysekiro2333/dsh-ide-mode
+category: ui
+description:
+  en: 'Adds an IDE mode button to the conversation header: one click turns the main panel into a three-column workspace with a file tree, an editable CodeMirror 6 code area that saves with Ctrl+S, and the live conversation.'
+  zh: '在会话标题栏加一个 IDE 模式按钮：一键把主面板换成三栏工作区——文件树、用 Ctrl+S 保存的 CodeMirror 6 代码区、以及实时对话。'

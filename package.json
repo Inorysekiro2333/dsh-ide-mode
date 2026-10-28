@@ -1,0 +1,64 @@
+{
+  "name": "@inory/dsh-ide-mode",
+  "version": "0.4.0",
+  "description": "IDE mode for the DSH desktop shell: one header button turns the main panel into a three-column workspace (file tree, editable CodeMirror 6 code area with Ctrl+S saving, and the real conversation embedded through the host's own conversation.content factory).",
+  "type": "module",
+  "license": "MIT",
+  "author": "Inorysekiro2333",
+  "homepage": "https://github.com/Inorysekiro2333/dsh-ide-mode#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inorysekiro2333/dsh-ide-mode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Inorysekiro2333/dsh-ide-mode/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh-bundle",
+    "ide",
+    "editor",
+    "codemirror",
+    "file-tree"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "client.editor.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ]
+    },
+    "manifestVersion": 1
+  },
+  "scripts": {
+    "validate:index": "node scripts/validate-index.mjs"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-plugin-market-index": "^0.2.1-rc.4"
+  }
+}

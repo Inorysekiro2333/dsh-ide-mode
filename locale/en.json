@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-ide-mode",
+    "description": "Adds an IDE mode button to the conversation header: one click turns the main panel into a three-column workspace — file tree, an editable code area (CodeMirror 6, guarded save with conflict detection), and the real conversation — with two draggable dividers."
+  }
+}

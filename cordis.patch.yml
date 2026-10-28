@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-ide-mode
+      name: '@inory/dsh-ide-mode'
